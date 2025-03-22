@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_18044608398a57414d41bed185951b7f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+             <h3 align=center style=font-size:16px><b>Mapa de Negocios en Pontevedra</b></h3>
+             
+    
+            <div class="folium-map" id="map_18044608398a57414d41bed185951b7f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_18044608398a57414d41bed185951b7f = L.map(
+                "map_18044608398a57414d41bed185951b7f",
+                {
+                    center: [42.43, -8.6445],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 15,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_dd08ae132a7a97e1d77ed50ec63cb639 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_dd08ae132a7a97e1d77ed50ec63cb639.addTo(map_18044608398a57414d41bed185951b7f);
+        
+    
+            var marker_cluster_7268de0233377a468888be35d55a9566 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_e07bd5c48fd561db716452dd5ef762ee = L.marker(
+                [42.4315, -8.6445],
+                {
+}
+            ).addTo(marker_cluster_7268de0233377a468888be35d55a9566);
+        
+    
+            var icon_d4c255a03728f5cbc89d5acfa73d3b4e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8418925e012d8c6320a44899252506a1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e1957ee5deeb984709a3b5bb5a2760e5 = $(`<div id="html_e1957ee5deeb984709a3b5bb5a2760e5" style="width: 100.0%; height: 100.0%;">     <b>Casa Fidel O'Pulpeiro</b><br>     Tipo: Restaurante<br>     Valoración: 4.6/5     </div>`)[0];
+                popup_8418925e012d8c6320a44899252506a1.setContent(html_e1957ee5deeb984709a3b5bb5a2760e5);
+            
+        
+
+        marker_e07bd5c48fd561db716452dd5ef762ee.bindPopup(popup_8418925e012d8c6320a44899252506a1)
+        ;
+
+        
+    
+    
+                marker_e07bd5c48fd561db716452dd5ef762ee.setIcon(icon_d4c255a03728f5cbc89d5acfa73d3b4e);
+            
+    
+            var marker_395a93d216a1e8d6c6f92929a199fbc2 = L.marker(
+                [42.4325, -8.6435],
+                {
+}
+            ).addTo(marker_cluster_7268de0233377a468888be35d55a9566);
+        
+    
+            var icon_46eb14639602132bf77b2419e2643931 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_86e048cd11abf7e3bb43758adec88c0a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_948c3690b2fa6252dfad6e454be2bb12 = $(`<div id="html_948c3690b2fa6252dfad6e454be2bb12" style="width: 100.0%; height: 100.0%;">     <b>Gumer - Restaurante Pontevedra</b><br>     Tipo: Restaurante<br>     Valoración: 4.7/5     </div>`)[0];
+                popup_86e048cd11abf7e3bb43758adec88c0a.setContent(html_948c3690b2fa6252dfad6e454be2bb12);
+            
+        
+
+        marker_395a93d216a1e8d6c6f92929a199fbc2.bindPopup(popup_86e048cd11abf7e3bb43758adec88c0a)
+        ;
+
+        
+    
+    
+                marker_395a93d216a1e8d6c6f92929a199fbc2.setIcon(icon_46eb14639602132bf77b2419e2643931);
+            
+    
+            var marker_0866eb0114dbf6946278bfc2c7905eb6 = L.marker(
+                [42.4305, -8.6455],
+                {
+}
+            ).addTo(marker_cluster_7268de0233377a468888be35d55a9566);
+        
+    
+            var icon_573054f99351896a04f3d003e6d96c29 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1bcce30568f5be736ff140c64e979e01 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a2f6302c5fdd141a1df512a0694cd7a2 = $(`<div id="html_a2f6302c5fdd141a1df512a0694cd7a2" style="width: 100.0%; height: 100.0%;">     <b>Casa Román - Pontevedra</b><br>     Tipo: Restaurante<br>     Valoración: 4.4/5     </div>`)[0];
+                popup_1bcce30568f5be736ff140c64e979e01.setContent(html_a2f6302c5fdd141a1df512a0694cd7a2);
+            
+        
+
+        marker_0866eb0114dbf6946278bfc2c7905eb6.bindPopup(popup_1bcce30568f5be736ff140c64e979e01)
+        ;
+
+        
+    
+    
+                marker_0866eb0114dbf6946278bfc2c7905eb6.setIcon(icon_573054f99351896a04f3d003e6d96c29);
+            
+    
+            var marker_c81755b6b3fabc5dc37627c568f1bd7f = L.marker(
+                [42.431, -8.644],
+                {
+}
+            ).addTo(marker_cluster_7268de0233377a468888be35d55a9566);
+        
+    
+            var icon_1511b9cd89a9ab1a750f219bcb5e7fc0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_810b1d2daf595abf601c2f1ca1df6d68 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_78e73000c3d80822f6e5f51c86e32804 = $(`<div id="html_78e73000c3d80822f6e5f51c86e32804" style="width: 100.0%; height: 100.0%;">     <b>Restaurante La Casa De Las 5 Puertas</b><br>     Tipo: Restaurante<br>     Valoración: 4.4/5     </div>`)[0];
+                popup_810b1d2daf595abf601c2f1ca1df6d68.setContent(html_78e73000c3d80822f6e5f51c86e32804);
+            
+        
+
+        marker_c81755b6b3fabc5dc37627c568f1bd7f.bindPopup(popup_810b1d2daf595abf601c2f1ca1df6d68)
+        ;
+
+        
+    
+    
+                marker_c81755b6b3fabc5dc37627c568f1bd7f.setIcon(icon_1511b9cd89a9ab1a750f219bcb5e7fc0);
+            
+    
+            var marker_36d7c57bf5fd8c83d50df68369152921 = L.marker(
+                [42.432, -8.645],
+                {
+}
+            ).addTo(marker_cluster_7268de0233377a468888be35d55a9566);
+        
+    
+            var icon_21944ccdc3aeea31646081e9e9b4ca79 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c4467da95911853076a99761118f10bf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b457d034074f95699d4f686af11d93aa = $(`<div id="html_b457d034074f95699d4f686af11d93aa" style="width: 100.0%; height: 100.0%;">     <b>Alcrique</b><br>     Tipo: Restaurante<br>     Valoración: 0.0/5     </div>`)[0];
+                popup_c4467da95911853076a99761118f10bf.setContent(html_b457d034074f95699d4f686af11d93aa);
+            
+        
+
+        marker_36d7c57bf5fd8c83d50df68369152921.bindPopup(popup_c4467da95911853076a99761118f10bf)
+        ;
+
+        
+    
+    
+                marker_36d7c57bf5fd8c83d50df68369152921.setIcon(icon_21944ccdc3aeea31646081e9e9b4ca79);
+            
+    
+            marker_cluster_7268de0233377a468888be35d55a9566.addTo(map_18044608398a57414d41bed185951b7f);
+        
+    
+            var marker_cluster_adb02cef37e3f2edd9c70861d80750d9 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_6234bc522f2807f1849bdc465ea4006f = L.marker(
+                [42.433, -8.643],
+                {
+}
+            ).addTo(marker_cluster_adb02cef37e3f2edd9c70861d80750d9);
+        
+    
+            var icon_0d27873991b61d14bbd20eb7f93c9d6d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3558e7457d6257f2275d735d7c671033 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_41170da80b14cc844602189510254dda = $(`<div id="html_41170da80b14cc844602189510254dda" style="width: 100.0%; height: 100.0%;">     <b>Parador de Pontevedra</b><br>     Tipo: Hotel<br>     Valoración: 4.2/5     </div>`)[0];
+                popup_3558e7457d6257f2275d735d7c671033.setContent(html_41170da80b14cc844602189510254dda);
+            
+        
+
+        marker_6234bc522f2807f1849bdc465ea4006f.bindPopup(popup_3558e7457d6257f2275d735d7c671033)
+        ;
+
+        
+    
+    
+                marker_6234bc522f2807f1849bdc465ea4006f.setIcon(icon_0d27873991b61d14bbd20eb7f93c9d6d);
+            
+    
+            var marker_a22ea48414d40db6538371fafaf1ca61 = L.marker(
+                [42.43, -8.642],
+                {
+}
+            ).addTo(marker_cluster_adb02cef37e3f2edd9c70861d80750d9);
+        
+    
+            var icon_cb63e6bb64fa62f3d5905107a38c991e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fe9d501c2261625fb6bf54fb5a63503f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2ff750bf3548af17c70157c130d22b0e = $(`<div id="html_2ff750bf3548af17c70157c130d22b0e" style="width: 100.0%; height: 100.0%;">     <b>Galicia Palace</b><br>     Tipo: Hotel<br>     Valoración: 4.1/5     </div>`)[0];
+                popup_fe9d501c2261625fb6bf54fb5a63503f.setContent(html_2ff750bf3548af17c70157c130d22b0e);
+            
+        
+
+        marker_a22ea48414d40db6538371fafaf1ca61.bindPopup(popup_fe9d501c2261625fb6bf54fb5a63503f)
+        ;
+
+        
+    
+    
+                marker_a22ea48414d40db6538371fafaf1ca61.setIcon(icon_cb63e6bb64fa62f3d5905107a38c991e);
+            
+    
+            var marker_9dc8006b583614b65054ed71dd2d9fa3 = L.marker(
+                [42.429, -8.6425],
+                {
+}
+            ).addTo(marker_cluster_adb02cef37e3f2edd9c70861d80750d9);
+        
+    
+            var icon_cc7e098b1176135c55e61bc47630f967 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f989b0b7f79f43410c199e57f386baef = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_15900a2cda8ce4a6595d4f6bc537056c = $(`<div id="html_15900a2cda8ce4a6595d4f6bc537056c" style="width: 100.0%; height: 100.0%;">     <b>Hotel Rías Bajas</b><br>     Tipo: Hotel<br>     Valoración: 4.1/5     </div>`)[0];
+                popup_f989b0b7f79f43410c199e57f386baef.setContent(html_15900a2cda8ce4a6595d4f6bc537056c);
+            
+        
+
+        marker_9dc8006b583614b65054ed71dd2d9fa3.bindPopup(popup_f989b0b7f79f43410c199e57f386baef)
+        ;
+
+        
+    
+    
+                marker_9dc8006b583614b65054ed71dd2d9fa3.setIcon(icon_cc7e098b1176135c55e61bc47630f967);
+            
+    
+            var marker_78d8f27da64ba8217d2075aa7a13ffd7 = L.marker(
+                [42.4295, -8.6435],
+                {
+}
+            ).addTo(marker_cluster_adb02cef37e3f2edd9c70861d80750d9);
+        
+    
+            var icon_c5e2e6d3a10c9c65518820df7e794740 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_207f2d49e06a91c388ea3f81508edc00 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6e01ec27adf4251688022f9e5304210e = $(`<div id="html_6e01ec27adf4251688022f9e5304210e" style="width: 100.0%; height: 100.0%;">     <b>Hotel Alda Centro Pontevedra</b><br>     Tipo: Hotel<br>     Valoración: 3.2/5     </div>`)[0];
+                popup_207f2d49e06a91c388ea3f81508edc00.setContent(html_6e01ec27adf4251688022f9e5304210e);
+            
+        
+
+        marker_78d8f27da64ba8217d2075aa7a13ffd7.bindPopup(popup_207f2d49e06a91c388ea3f81508edc00)
+        ;
+
+        
+    
+    
+                marker_78d8f27da64ba8217d2075aa7a13ffd7.setIcon(icon_c5e2e6d3a10c9c65518820df7e794740);
+            
+    
+            var marker_e5e21302da3f3ac46fbf1f61f8d0f4a0 = L.marker(
+                [42.4285, -8.6445],
+                {
+}
+            ).addTo(marker_cluster_adb02cef37e3f2edd9c70861d80750d9);
+        
+    
+            var icon_a9bca4b9ea46c469ae710bd0ce640f3b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e8f124edea8f6f3cd882155391d9e87c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_784d31e14bb9a77b41869d49c2edc3b5 = $(`<div id="html_784d31e14bb9a77b41869d49c2edc3b5" style="width: 100.0%; height: 100.0%;">     <b>Hotel Madrid</b><br>     Tipo: Hotel<br>     Valoración: 3.5/5     </div>`)[0];
+                popup_e8f124edea8f6f3cd882155391d9e87c.setContent(html_784d31e14bb9a77b41869d49c2edc3b5);
+            
+        
+
+        marker_e5e21302da3f3ac46fbf1f61f8d0f4a0.bindPopup(popup_e8f124edea8f6f3cd882155391d9e87c)
+        ;
+
+        
+    
+    
+                marker_e5e21302da3f3ac46fbf1f61f8d0f4a0.setIcon(icon_a9bca4b9ea46c469ae710bd0ce640f3b);
+            
+    
+            var marker_5a0c0246bf68a45225defb29f537823b = L.marker(
+                [42.428, -8.645],
+                {
+}
+            ).addTo(marker_cluster_adb02cef37e3f2edd9c70861d80750d9);
+        
+    
+            var icon_8bd1b3e9e61e5beb967bf0dbe925719d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c1cf261a40ea456308181b9257670e9c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5dbe8634504b2788c2a11c7ecf0fcedf = $(`<div id="html_5dbe8634504b2788c2a11c7ecf0fcedf" style="width: 100.0%; height: 100.0%;">     <b>Pensión A Xanela</b><br>     Tipo: Hotel<br>     Valoración: 0.0/5     </div>`)[0];
+                popup_c1cf261a40ea456308181b9257670e9c.setContent(html_5dbe8634504b2788c2a11c7ecf0fcedf);
+            
+        
+
+        marker_5a0c0246bf68a45225defb29f537823b.bindPopup(popup_c1cf261a40ea456308181b9257670e9c)
+        ;
+
+        
+    
+    
+                marker_5a0c0246bf68a45225defb29f537823b.setIcon(icon_8bd1b3e9e61e5beb967bf0dbe925719d);
+            
+    
+            var marker_1360a8bb0bec8784471cffce2900c4f4 = L.marker(
+                [42.4275, -8.644],
+                {
+}
+            ).addTo(marker_cluster_adb02cef37e3f2edd9c70861d80750d9);
+        
+    
+            var icon_996d06715a2b2a7f60fd330bcd4edf57 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_233eb5947e1f21f3b25a97b7626aeca1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c53e3ec661d7371ae48bb3d1593556c2 = $(`<div id="html_c53e3ec661d7371ae48bb3d1593556c2" style="width: 100.0%; height: 100.0%;">     <b>Casa Maruxa</b><br>     Tipo: Hotel<br>     Valoración: 3.5/5     </div>`)[0];
+                popup_233eb5947e1f21f3b25a97b7626aeca1.setContent(html_c53e3ec661d7371ae48bb3d1593556c2);
+            
+        
+
+        marker_1360a8bb0bec8784471cffce2900c4f4.bindPopup(popup_233eb5947e1f21f3b25a97b7626aeca1)
+        ;
+
+        
+    
+    
+                marker_1360a8bb0bec8784471cffce2900c4f4.setIcon(icon_996d06715a2b2a7f60fd330bcd4edf57);
+            
+    
+            var marker_4ebe4775593888dcc0b31c022f930bc5 = L.marker(
+                [42.427, -8.643],
+                {
+}
+            ).addTo(marker_cluster_adb02cef37e3f2edd9c70861d80750d9);
+        
+    
+            var icon_6362a974d7d80a2fb1195ca4ecf24b0a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_099e9219beb0849aa248cf915c55f1cc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_98680e506a032359238902b206b7e4bf = $(`<div id="html_98680e506a032359238902b206b7e4bf" style="width: 100.0%; height: 100.0%;">     <b>Sweet Home Pontevedra</b><br>     Tipo: Hotel<br>     Valoración: 0.0/5     </div>`)[0];
+                popup_099e9219beb0849aa248cf915c55f1cc.setContent(html_98680e506a032359238902b206b7e4bf);
+            
+        
+
+        marker_4ebe4775593888dcc0b31c022f930bc5.bindPopup(popup_099e9219beb0849aa248cf915c55f1cc)
+        ;
+
+        
+    
+    
+                marker_4ebe4775593888dcc0b31c022f930bc5.setIcon(icon_6362a974d7d80a2fb1195ca4ecf24b0a);
+            
+    
+            var marker_2dbc9a8f56cf70b5ba57d8b0d8353565 = L.marker(
+                [42.4265, -8.6425],
+                {
+}
+            ).addTo(marker_cluster_adb02cef37e3f2edd9c70861d80750d9);
+        
+    
+            var icon_06cec1997d01d6b956b68fce7313ee8a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_24f7faeb08b621f8d4f6c35390fd516b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2973f378c67bab7bacd7635671f2304f = $(`<div id="html_2973f378c67bab7bacd7635671f2304f" style="width: 100.0%; height: 100.0%;">     <b>BULEZEN URBAN HOSTEL</b><br>     Tipo: Hotel<br>     Valoración: 0.0/5     </div>`)[0];
+                popup_24f7faeb08b621f8d4f6c35390fd516b.setContent(html_2973f378c67bab7bacd7635671f2304f);
+            
+        
+
+        marker_2dbc9a8f56cf70b5ba57d8b0d8353565.bindPopup(popup_24f7faeb08b621f8d4f6c35390fd516b)
+        ;
+
+        
+    
+    
+                marker_2dbc9a8f56cf70b5ba57d8b0d8353565.setIcon(icon_06cec1997d01d6b956b68fce7313ee8a);
+            
+    
+            marker_cluster_adb02cef37e3f2edd9c70861d80750d9.addTo(map_18044608398a57414d41bed185951b7f);
+        
+    
+            var marker_cluster_699daa2b9616908f816c5bcc416fe06d = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_26c5262b7413fbf6aa4bdae7b4e4c87f = L.marker(
+                [42.431, -8.6425],
+                {
+}
+            ).addTo(marker_cluster_699daa2b9616908f816c5bcc416fe06d);
+        
+    
+            var icon_2b8bd22fbd47c1e5723c9f2ef7913ede = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a022639ea0e8b89703e962e18f7ea168 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0a91c50ab32af69a19d999bd0a60ed08 = $(`<div id="html_0a91c50ab32af69a19d999bd0a60ed08" style="width: 100.0%; height: 100.0%;">     <b>Club del Café - Pontevedra</b><br>     Tipo: Cafetería<br>     Valoración: 4.6/5     </div>`)[0];
+                popup_a022639ea0e8b89703e962e18f7ea168.setContent(html_0a91c50ab32af69a19d999bd0a60ed08);
+            
+        
+
+        marker_26c5262b7413fbf6aa4bdae7b4e4c87f.bindPopup(popup_a022639ea0e8b89703e962e18f7ea168)
+        ;
+
+        
+    
+    
+                marker_26c5262b7413fbf6aa4bdae7b4e4c87f.setIcon(icon_2b8bd22fbd47c1e5723c9f2ef7913ede);
+            
+    
+            var marker_c8191e396f7fed8b608b9d2211402aac = L.marker(
+                [42.4305, -8.643],
+                {
+}
+            ).addTo(marker_cluster_699daa2b9616908f816c5bcc416fe06d);
+        
+    
+            var icon_9003856e15127d558954d6b57729dcdf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_628b5cff111352a06f1585618d1b77f4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ac14876d88857dbfa72ff4b3eb01d1a6 = $(`<div id="html_ac14876d88857dbfa72ff4b3eb01d1a6" style="width: 100.0%; height: 100.0%;">     <b>Cafetería Moi Bo</b><br>     Tipo: Cafetería<br>     Valoración: 4.3/5     </div>`)[0];
+                popup_628b5cff111352a06f1585618d1b77f4.setContent(html_ac14876d88857dbfa72ff4b3eb01d1a6);
+            
+        
+
+        marker_c8191e396f7fed8b608b9d2211402aac.bindPopup(popup_628b5cff111352a06f1585618d1b77f4)
+        ;
+
+        
+    
+    
+                marker_c8191e396f7fed8b608b9d2211402aac.setIcon(icon_9003856e15127d558954d6b57729dcdf);
+            
+    
+            var marker_a4cb1cf105d0c04a59028c88ce2cb4c2 = L.marker(
+                [42.43, -8.6435],
+                {
+}
+            ).addTo(marker_cluster_699daa2b9616908f816c5bcc416fe06d);
+        
+    
+            var icon_22bc7821e6c21ade71a6bdf47d6690ad = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c82505d96c47b883ebe8e573d0ebf3ea = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a3a1b3b7e1ec8b0e7609430c6b142eef = $(`<div id="html_a3a1b3b7e1ec8b0e7609430c6b142eef" style="width: 100.0%; height: 100.0%;">     <b>Misto Café Bar</b><br>     Tipo: Cafetería<br>     Valoración: 4.7/5     </div>`)[0];
+                popup_c82505d96c47b883ebe8e573d0ebf3ea.setContent(html_a3a1b3b7e1ec8b0e7609430c6b142eef);
+            
+        
+
+        marker_a4cb1cf105d0c04a59028c88ce2cb4c2.bindPopup(popup_c82505d96c47b883ebe8e573d0ebf3ea)
+        ;
+
+        
+    
+    
+                marker_a4cb1cf105d0c04a59028c88ce2cb4c2.setIcon(icon_22bc7821e6c21ade71a6bdf47d6690ad);
+            
+    
+            var marker_f4673c1b52a77ecd35527bda4a2ae711 = L.marker(
+                [42.4295, -8.644],
+                {
+}
+            ).addTo(marker_cluster_699daa2b9616908f816c5bcc416fe06d);
+        
+    
+            var icon_0a9db6a4367b460696f66922e35af09a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2e1cd7b7decd14bd11fcb32d805fff0a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_15b75ffcf707c407f3c51573ae30e5a0 = $(`<div id="html_15b75ffcf707c407f3c51573ae30e5a0" style="width: 100.0%; height: 100.0%;">     <b>Cafetaría Don José</b><br>     Tipo: Cafetería<br>     Valoración: 4.4/5     </div>`)[0];
+                popup_2e1cd7b7decd14bd11fcb32d805fff0a.setContent(html_15b75ffcf707c407f3c51573ae30e5a0);
+            
+        
+
+        marker_f4673c1b52a77ecd35527bda4a2ae711.bindPopup(popup_2e1cd7b7decd14bd11fcb32d805fff0a)
+        ;
+
+        
+    
+    
+                marker_f4673c1b52a77ecd35527bda4a2ae711.setIcon(icon_0a9db6a4367b460696f66922e35af09a);
+            
+    
+            var marker_27795283779957d7256a8a4f182ee736 = L.marker(
+                [42.429, -8.6445],
+                {
+}
+            ).addTo(marker_cluster_699daa2b9616908f816c5bcc416fe06d);
+        
+    
+            var icon_22ab33d7829c2dcc8c5951c086dd8523 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6b7f09b93186a4eea159ff26b5107b49 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_17f711219109a4b5647de3d123178280 = $(`<div id="html_17f711219109a4b5647de3d123178280" style="width: 100.0%; height: 100.0%;">     <b>Cafetería Sonata</b><br>     Tipo: Cafetería<br>     Valoración: 4.5/5     </div>`)[0];
+                popup_6b7f09b93186a4eea159ff26b5107b49.setContent(html_17f711219109a4b5647de3d123178280);
+            
+        
+
+        marker_27795283779957d7256a8a4f182ee736.bindPopup(popup_6b7f09b93186a4eea159ff26b5107b49)
+        ;
+
+        
+    
+    
+                marker_27795283779957d7256a8a4f182ee736.setIcon(icon_22ab33d7829c2dcc8c5951c086dd8523);
+            
+    
+            var marker_67fbce726da2a7879904a932a5f62fdf = L.marker(
+                [42.4285, -8.645],
+                {
+}
+            ).addTo(marker_cluster_699daa2b9616908f816c5bcc416fe06d);
+        
+    
+            var icon_3ca20d816d1298f7bd41a6a680e21dcf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2ad5784480689d0b78726e036dafd010 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_accbf21f8a501b5018490d25e06fc90e = $(`<div id="html_accbf21f8a501b5018490d25e06fc90e" style="width: 100.0%; height: 100.0%;">     <b>Borona Café</b><br>     Tipo: Cafetería<br>     Valoración: 0.0/5     </div>`)[0];
+                popup_2ad5784480689d0b78726e036dafd010.setContent(html_accbf21f8a501b5018490d25e06fc90e);
+            
+        
+
+        marker_67fbce726da2a7879904a932a5f62fdf.bindPopup(popup_2ad5784480689d0b78726e036dafd010)
+        ;
+
+        
+    
+    
+                marker_67fbce726da2a7879904a932a5f62fdf.setIcon(icon_3ca20d816d1298f7bd41a6a680e21dcf);
+            
+    
+            var marker_76e11b31b7c56ebd3bf643ace711fc68 = L.marker(
+                [42.428, -8.6455],
+                {
+}
+            ).addTo(marker_cluster_699daa2b9616908f816c5bcc416fe06d);
+        
+    
+            var icon_85443f18351ac4da78b347f7bd0022e8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cb0336abad6c4e215da72a02fe193f1b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_890775d7d4d0cc073e4ab5aecc21be34 = $(`<div id="html_890775d7d4d0cc073e4ab5aecc21be34" style="width: 100.0%; height: 100.0%;">     <b>Cafetería El pasaje</b><br>     Tipo: Cafetería<br>     Valoración: 0.0/5     </div>`)[0];
+                popup_cb0336abad6c4e215da72a02fe193f1b.setContent(html_890775d7d4d0cc073e4ab5aecc21be34);
+            
+        
+
+        marker_76e11b31b7c56ebd3bf643ace711fc68.bindPopup(popup_cb0336abad6c4e215da72a02fe193f1b)
+        ;
+
+        
+    
+    
+                marker_76e11b31b7c56ebd3bf643ace711fc68.setIcon(icon_85443f18351ac4da78b347f7bd0022e8);
+            
+    
+            var marker_4ee4e81301872daba496f7487fa973f7 = L.marker(
+                [42.4275, -8.646],
+                {
+}
+            ).addTo(marker_cluster_699daa2b9616908f816c5bcc416fe06d);
+        
+    
+            var icon_0f56f045c09d11f10db51a49dd8cf344 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_15f48bae66c8d37e8e83871673b801db = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_50971e8042a830515c58c86c96823ed0 = $(`<div id="html_50971e8042a830515c58c86c96823ed0" style="width: 100.0%; height: 100.0%;">     <b>Marco Café</b><br>     Tipo: Cafetería<br>     Valoración: 0.0/5     </div>`)[0];
+                popup_15f48bae66c8d37e8e83871673b801db.setContent(html_50971e8042a830515c58c86c96823ed0);
+            
+        
+
+        marker_4ee4e81301872daba496f7487fa973f7.bindPopup(popup_15f48bae66c8d37e8e83871673b801db)
+        ;
+
+        
+    
+    
+                marker_4ee4e81301872daba496f7487fa973f7.setIcon(icon_0f56f045c09d11f10db51a49dd8cf344);
+            
+    
+            var marker_df1563c17b2595bb845165a135a2d203 = L.marker(
+                [42.427, -8.6465],
+                {
+}
+            ).addTo(marker_cluster_699daa2b9616908f816c5bcc416fe06d);
+        
+    
+            var icon_c941275cdaa715470ea4af6b67daa1f2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_49e58ec4b2824eac0aa0b49ebc0b124f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b05308ea83f2194d14c160492ca5df88 = $(`<div id="html_b05308ea83f2194d14c160492ca5df88" style="width: 100.0%; height: 100.0%;">     <b>Cafetería Estilo</b><br>     Tipo: Cafetería<br>     Valoración: 0.0/5     </div>`)[0];
+                popup_49e58ec4b2824eac0aa0b49ebc0b124f.setContent(html_b05308ea83f2194d14c160492ca5df88);
+            
+        
+
+        marker_df1563c17b2595bb845165a135a2d203.bindPopup(popup_49e58ec4b2824eac0aa0b49ebc0b124f)
+        ;
+
+        
+    
+    
+                marker_df1563c17b2595bb845165a135a2d203.setIcon(icon_c941275cdaa715470ea4af6b67daa1f2);
+            
+    
+            var marker_cb027fa757f2f4b839e832950e2a8f6d = L.marker(
+                [42.4265, -8.647],
+                {
+}
+            ).addTo(marker_cluster_699daa2b9616908f816c5bcc416fe06d);
+        
+    
+            var icon_2061474d20c90c30744c6cf66b82b942 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c892f836b52f1656a20e8b98dbca1aca = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_88361fcec099e607e7f0cdcd77850df2 = $(`<div id="html_88361fcec099e607e7f0cdcd77850df2" style="width: 100.0%; height: 100.0%;">     <b>Cafetería El del cura</b><br>     Tipo: Cafetería<br>     Valoración: 0.0/5     </div>`)[0];
+                popup_c892f836b52f1656a20e8b98dbca1aca.setContent(html_88361fcec099e607e7f0cdcd77850df2);
+            
+        
+
+        marker_cb027fa757f2f4b839e832950e2a8f6d.bindPopup(popup_c892f836b52f1656a20e8b98dbca1aca)
+        ;
+
+        
+    
+    
+                marker_cb027fa757f2f4b839e832950e2a8f6d.setIcon(icon_2061474d20c90c30744c6cf66b82b942);
+            
+    
+            marker_cluster_699daa2b9616908f816c5bcc416fe06d.addTo(map_18044608398a57414d41bed185951b7f);
+        
+    
+            var layer_control_40603ff36fa873bb1f2ebec434c5ea1a_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_dd08ae132a7a97e1d77ed50ec63cb639,
+                },
+                overlays :  {
+                    "Restaurantes" : marker_cluster_7268de0233377a468888be35d55a9566,
+                    "Hoteles" : marker_cluster_adb02cef37e3f2edd9c70861d80750d9,
+                    "Cafeter\u00edas" : marker_cluster_699daa2b9616908f816c5bcc416fe06d,
+                },
+            };
+            let layer_control_40603ff36fa873bb1f2ebec434c5ea1a = L.control.layers(
+                layer_control_40603ff36fa873bb1f2ebec434c5ea1a_layers.base_layers,
+                layer_control_40603ff36fa873bb1f2ebec434c5ea1a_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_18044608398a57414d41bed185951b7f);
+
+        
+</script>
+</html>

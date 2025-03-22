@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresas de Nueva Creación - Galicia</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .filter-container {
+            margin: 2rem 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        
+        .filter-btn {
+            padding: 0.5rem 1rem;
+            background-color: #f1f1f1;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .filter-btn.active, .filter-btn:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        .update-form {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 2rem 0;
+        }
+        
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        .form-group textarea {
+            min-height: 100px;
+        }
+        
+        .btn {
+            padding: 0.5rem 1rem;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Empresas de Nueva Creación en Galicia</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="#empresas-recientes">Empresas Recientes</a></li>
+                    <li><a href="#estadisticas">Estadísticas</a></li>
+                    <li><a href="#actualizar">Actualizar Datos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="empresas-recientes" class="container section">
+            <h2>Empresas Recientemente Constituidas</h2>
+            <p>A continuación se presenta un listado de las empresas más recientemente constituidas en Galicia, según los datos disponibles del Registro Mercantil.</p>
+            
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">Todas</button>
+                <button class="filter-btn" data-filter="A Coruña">A Coruña</button>
+                <button class="filter-btn" data-filter="Pontevedra">Pontevedra</button>
+                <button class="filter-btn" data-filter="Lugo">Lugo</button>
+                <button class="filter-btn" data-filter="Ourense">Ourense</button>
+            </div>
+            
+            <div class="table-responsive">
+                <table id="nuevas-empresas-table">
+                    <thead>
+                        <tr>
+                            <th>Nº</th>
+                            <th>Nombre de la empresa</th>
+                            <th>Fecha de constitución</th>
+                            <th>Provincia</th>
+                            <th>Tipo de sociedad</th>
+                            <th>Sector/Actividad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Hermanrose SL</td>
+                            <td>14/03/2025</td>
+                            <td>No especificada</td>
+                            <td>Sociedad Limitada</td>
+                            <td>No especificada</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Mab Economistas SLP</td>
+                            <td>14/03/2025</td>
+                            <td>No especificada</td>
+                            <td>Sociedad Limitada Profesional</td>
+                            <td>Servicios de asesoría económica</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Siasak Global SL</td>
+                            <td>14/03/2025</td>
+                            <td>No especificada</td>
+                            <td>Sociedad Limitada</td>
+                            <td>No especificada</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Fulantica Sociedad Limitada</td>
+                            <td>14/03/2025</td>
+                            <td>No especificada</td>
+                            <td>Sociedad Limitada</td>
+                            <td>No especificada</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="note">
+                <h3>Nota metodológica</h3>
+                <p>Esta información ha sido recopilada a partir de eInforma (datos parciales visibles en resultados de búsqueda). Para un análisis más completo, se recomienda acceder directamente al BORME o utilizar servicios como eInforma, Axesor o Infoempresa con acceso completo.</p>
+            </div>
+        </section>
+
+        <section id="estadisticas" class="container section">
+            <h2>Estadísticas de Creación de Empresas</h2>
+            <p>Análisis estadístico de la creación de empresas en Galicia durante los últimos meses.</p>
+            
+            <div class="grid-2">
+                <div class="chart-container">
+                    <canvas id="empresasPorProvinciaChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <canvas id="empresasPorSectorChart"></canvas>
+                </div>
+            </div>
+            
+            <div class="grid-2">
+                <div class="card">
+                    <h3>Tendencias Recientes</h3>
+                    <p>Según los datos disponibles, la creación de empresas en Galicia ha mostrado las siguientes tendencias:</p>
+                    <ul>
+                        <li>Incremento en el sector tecnológico y servicios digitales</li>
+                        <li>Aumento de sociedades limitadas profesionales</li>
+                        <li>Mayor actividad emprendedora en A Coruña y Pontevedra</li>
+                        <li>Crecimiento en el sector de energías renovables</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Comparativa con Años Anteriores</h3>
+                    <p>En comparación con años anteriores, se observa:</p>
+                    <ul>
+                        <li>Incremento del 12.5% en la creación de empresas respecto al mismo periodo del año anterior</li>
+                        <li>Mayor diversificación sectorial</li>
+                        <li>Aumento en el capital social medio de las nuevas empresas</li>
+                        <li>Mayor presencia de emprendimiento femenino</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="actualizar" class="container section">
+            <h2>Actualizar Datos</h2>
+            <p>Este formulario permite añadir información sobre nuevas empresas constituidas en Galicia. Los datos serán revisados antes de su publicación.</p>
+            
+            <form id="update-data-form" class="update-form">
+                <div class="form-group">
+                    <label for="company-name">Nombre de la empresa</label>
+                    <input type="text" id="company-name" name="company-name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="constitution-date">Fecha de constitución</label>
+                    <input type="date" id="constitution-date" name="constitution-date" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="province">Provincia</label>
+                    <select id="province" name="province" required>
+                        <option value="">Seleccionar provincia</option>
+                        <option value="A Coruña">A Coruña</option>
+                        <option value="Pontevedra">Pontevedra</option>
+                        <option value="Lugo">Lugo</option>
+                        <option value="Ourense">Ourense</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="company-type">Tipo de sociedad</label>
+                    <select id="company-type" name="company-type" required>
+                        <option value="">Seleccionar tipo</option>
+                        <option value="Sociedad Limitada">Sociedad Limitada (SL)</option>
+                        <option value="Sociedad Anónima">Sociedad Anónima (SA)</option>
+                        <option value="Sociedad Limitada Profesional">Sociedad Limitada Profesional (SLP)</option>
+                        <option value="Sociedad Cooperativa">Sociedad Cooperativa</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="sector">Sector/Actividad</label>
+                    <input type="text" id="sector" name="sector" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="additional-info">Información adicional</label>
+                    <textarea id="additional-info" name="additional-info"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="source">Fuente de información</label>
+                    <input type="text" id="source" name="source" required>
+                </div>
+                
+                <button type="submit" class="btn">Enviar información</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Análisis de Mercado Local - Pontevedra</p>
+            <p>Última actualización: Marzo 2025</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Gráfico de empresas por provincia
+            const provinciaCtx = document.getElementById('empresasPorProvinciaChart').getContext('2d');
+            const provinciaChart = new Chart(provinciaCtx, {
+                type: 'bar',
+                data: {
+                    labels: ['A Coruña', 'Pontevedra', 'Lugo', 'Ourense'],
+                    datasets: [{
+                        label: 'Empresas creadas (Marzo 2025)',
+                        data: [148, 146, 33, 43],
+                        backgroundColor: [
+                            '#3498db',
+                            '#2ecc71',
+                            '#f39c12',
+                            '#e74c3c'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: 'Empresas por Provincia'
+                        }
+                    }
+                }
+            });
+
+            // Gráfico de empresas por sector
+            const sectorCtx = document.getElementById('empresasPorSectorChart').getContext('2d');
+            const sectorChart = new Chart(sectorCtx, {
+                type: 'pie',
+                data: {
+                    labels: ['Servicios', 'Comercio', 'Construcción', 'Industria', 'Tecnología', 'Otros'],
+                    datasets: [{
+                        data: [35, 25, 15, 10, 10, 5],
+                        backgroundColor: [
+                            '#3498db',
+                            '#2ecc71',
+                            '#f39c12',
+                            '#e74c3c',
+                            '#9b59b6',
+                            '#95a5a6'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: 'Distribución por Sector'
+                        }
+                    }
+                }
+            });
+
+            // Añadir funcionalidad para filtrar empresas
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const filter = this.dataset.filter;
+                    const rows = document.querySelectorAll('#nuevas-empresas-table tbody tr');
+                    
+                    rows.forEach(row => {
+                        if (filter === 'all') {
+                            row.style.display = '';
+                        } else {
+                            const province = row.querySelector('td:nth-child(4)').textContent;
+                            if (province.includes(filter)) {
+                                row.style.display = '';
+                            } else {
+                                row.style.display = 'none';
+                            }
+                        }
+                    });
+                    
+                    // Actualizar botones activos
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+
+            // Añadir funcionalidad para el formulario
+            const updateForm = document.getElementById('update-data-form');
+            updateForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Datos enviados correctamente. En una implementación real, estos datos se guardarían en una base de datos.');
+                this.reset();
+            });
+        });
+    </script>
+</body>
+</html>

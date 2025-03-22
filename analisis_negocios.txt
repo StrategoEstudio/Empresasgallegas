@@ -1,0 +1,65 @@
+ANÁLISIS DE NEGOCIOS EN PONTEVEDRA
+==================================
+
+Total de restaurantes: 5
+Total de hoteles: 9
+Total de cafeterías: 10
+Total de negocios analizados: 24
+
+DISTRIBUCIÓN POR TIPO
+--------------------
+Tipos de restaurantes:
+tipo
+Restaurante    3
+Galician       1
+Name: count, dtype: int64
+
+Tipos de hoteles:
+tipo
+4-star hotel    2
+1-star hotel    2
+3-star hotel    1
+2-star hotel    1
+Name: count, dtype: int64
+
+Tipos de cafeterías:
+tipo
+Espresso bar    1
+Art cafe        1
+Breakfast       1
+Cafetería       1
+Cafe            1
+Name: count, dtype: int64
+
+VALORACIONES
+-----------
+Valoración media restaurantes: 3.62
+Valoración media hoteles: 3.77
+Valoración media cafeterías: 4.50
+
+PRECIOS
+------
+Restaurantes:
+precio
+€30-40    2
+€20-30    1
+$$$       1
+Name: count, dtype: int64
+
+Hoteles:
+precio
+$91    1
+$84    1
+$87    1
+$44    1
+$49    1
+$68    1
+$40    1
+Name: count, dtype: int64
+
+Cafeterías:
+precio
+€1-10     4
+€10-20    1
+Name: count, dtype: int64
+

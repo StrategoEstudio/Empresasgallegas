@@ -1,0 +1,27 @@
+LISTA DE NEGOCIOS PARA ANÁLISIS DE PRESENCIA DIGITAL
+==================================================
+
+1. Casa Fidel O'Pulpeiro - Restaurante - Valoración: 4.6
+2. Gumer - Restaurante Pontevedra - Restaurante - Valoración: 4.7
+3. Casa Román - Pontevedra - Restaurante - Valoración: 4.4
+4. Restaurante La Casa De Las 5 Puertas - Restaurante - Valoración: 4.4
+5. Alcrique - Restaurante - Valoración: 0.0
+6. Parador de Pontevedra - Hotel - Valoración: 4.2
+7. Galicia Palace - Hotel - Valoración: 4.1
+8. Hotel Rías Bajas - Hotel - Valoración: 4.1
+9. Hotel Alda Centro Pontevedra - Hotel - Valoración: 3.2
+10. Hotel Madrid - Hotel - Valoración: 3.5
+11. Pensión A Xanela - Hotel - Valoración: 0
+12. Casa Maruxa - Hotel - Valoración: 3.5
+13. Sweet Home Pontevedra - Hotel - Valoración: 0
+14. BULEZEN URBAN HOSTEL - Hotel - Valoración: 0
+15. Club del Café - Pontevedra - Cafetería - Valoración: 4.6
+16. Cafetería Moi Bo - Cafetería - Valoración: 4.3
+17. Misto Café Bar - Cafetería - Valoración: 4.7
+18. Cafetaría Don José - Cafetería - Valoración: 4.4
+19. Cafetería Sonata - Cafetería - Valoración: 4.5
+20. Borona Café - Cafetería - Valoración: 0
+21. Cafetería El pasaje - Cafetería - Valoración: 0
+22. Marco Café - Cafetería - Valoración: 0
+23. Cafetería Estilo - Cafetería - Valoración: 0
+24. Cafetería El del cura - Cafetería - Valoración: 0

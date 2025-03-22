@@ -1,0 +1,11 @@
+nombre,valoracion,num_valoraciones,precio,tipo,direccion,caracteristicas,horario,servicios
+"Club del Café - Pontevedra",4.6,632,"€1-10","Espresso bar","36 B, Rúa Marqués de Riestra","","Open • Closes 9 PM","Dine-in • Takeout • No delivery"
+"Cafetería Moi Bo",4.3,1204,"€1-10","Art cafe","Rúa Michelena, 34","","Open • Closes 3 PM","Dine-in • Takeout • No delivery"
+"Misto Café Bar",4.7,332,"€10-20","Breakfast","Rúa Marquesa, 3","","Open • Closes 5:30 PM","Dine-in • Takeout • No delivery"
+"Cafetaría Don José",4.4,605,"€1-10","Cafetería","Calle De, Rúa Padre Fernando Olmedo, 29-1","","Open • Closes 1 AM","Dine-in • No delivery"
+"Cafetería Sonata",4.5,438,"€1-10","Cafe","Rúa Peregrina, 66","","Open • Closes 1 AM","Dine-in • No delivery"
+"Borona Café",,,"","","","","",""
+"Cafetería El pasaje",,,"","","","","",""
+"Marco Café",,,"","","","","",""
+"Cafetería Estilo",,,"","","","","",""
+"Cafetería El del cura",,,"","","","","",""
