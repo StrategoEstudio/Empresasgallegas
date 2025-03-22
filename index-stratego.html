@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis de Mercado Local - Pontevedra</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles-stratego.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Análisis de Mercado Local en Pontevedra</h1>
+            <nav>
+                <ul>
+                    <li><a href="#resumen">Resumen</a></li>
+                    <li><a href="#distribucion">Distribución</a></li>
+                    <li><a href="#valoraciones">Valoraciones</a></li>
+                    <li><a href="#presencia-digital">Presencia Digital</a></li>
+                    <li><a href="#zonas">Zonas Comerciales</a></li>
+                    <li><a href="#nuevas-empresas">Nuevas Empresas</a></li>
+                    <li><a href="#conclusiones">Conclusiones</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="resumen" class="container section">
+            <h2>Resumen Ejecutivo</h2>
+            <p>Este análisis presenta un estudio detallado del ecosistema empresarial de Pontevedra, con especial atención al sector turístico y su nivel de digitalización. Se han analizado un total de 24 negocios locales, incluyendo restaurantes, hoteles y cafeterías, para evaluar su presencia física, valoraciones, precios y presencia digital.</p>
+            <div class="cards">
+                <div class="card">
+                    <h3>24</h3>
+                    <p>Negocios analizados</p>
+                </div>
+                <div class="card">
+                    <h3>4.50/5</h3>
+                    <p>Valoración media cafeterías</p>
+                </div>
+                <div class="card">
+                    <h3>100%</h3>
+                    <p>Con presencia web</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="distribucion" class="container section">
+            <h2>Distribución de Negocios</h2>
+            <p>Se han identificado y analizado un total de 24 negocios en Pontevedra:</p>
+            <div class="chart-container">
+                <canvas id="distribucionChart"></canvas>
+            </div>
+            <div class="grid-3">
+                <div>
+                    <h3>Restaurantes (5)</h3>
+                    <ul>
+                        <li>Restaurante tradicional (3)</li>
+                        <li>Cocina gallega (1)</li>
+                        <li>Otros (1)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Hoteles (9)</h3>
+                    <ul>
+                        <li>4 estrellas (2)</li>
+                        <li>3 estrellas (1)</li>
+                        <li>2 estrellas (1)</li>
+                        <li>1 estrella (2)</li>
+                        <li>Otros (3)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Cafeterías (10)</h3>
+                    <ul>
+                        <li>Espresso bar (1)</li>
+                        <li>Art cafe (1)</li>
+                        <li>Breakfast (1)</li>
+                        <li>Cafetería (1)</li>
+                        <li>Cafe (1)</li>
+                        <li>Otros (5)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="valoraciones" class="container section">
+            <h2>Valoraciones y Precios</h2>
+            <div class="chart-container">
+                <canvas id="valoracionesChart"></canvas>
+            </div>
+            <p>Las cafeterías son los establecimientos mejor valorados en Pontevedra, seguidas por los hoteles y los restaurantes.</p>
+            
+            <h3>Rangos de Precios</h3>
+            <div class="grid-3">
+                <div>
+                    <h4>Restaurantes</h4>
+                    <ul>
+                        <li>€30-40: 2 establecimientos</li>
+                        <li>€20-30: 1 establecimiento</li>
+                        <li>$$$: 1 establecimiento</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Hoteles</h4>
+                    <ul>
+                        <li>$40-$50: 2 establecimientos</li>
+                        <li>$51-$70: 1 establecimiento</li>
+                        <li>$71-$90: 2 establecimientos</li>
+                        <li>$91+: 1 establecimiento</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Cafeterías</h4>
+                    <ul>
+                        <li>€1-10: 4 establecimientos</li>
+                        <li>€10-20: 1 establecimiento</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="presencia-digital" class="container section">
+            <h2>Presencia Digital</h2>
+            <div class="chart-container">
+                <canvas id="presenciaDigitalChart"></canvas>
+            </div>
+            <p>De los 8 negocios analizados en detalle, todos cuentan con sitio web y presencia en Facebook e Instagram, mientras que solo un pequeño porcentaje tiene presencia activa en Twitter/X.</p>
+            
+            <h3>Nivel de Actividad en Redes Sociales</h3>
+            <div class="chart-container">
+                <canvas id="actividadRedesChart"></canvas>
+            </div>
+            
+            <h3>Calidad de Diseño Web</h3>
+            <p>La mayoría de los negocios analizados cuentan con sitios web funcionales, aunque con diferentes niveles de calidad y optimización para buscadores. Destacan positivamente:</p>
+            <div class="grid-2">
+                <div class="card">
+                    <h3>Club del Café</h3>
+                    <p>Sitio web moderno, responsive y rápido con excelente diseño visual y experiencia de usuario.</p>
+                    <a href="#" class="btn">Ver análisis completo</a>
+                </div>
+                <div class="card">
+                    <h3>Galicia Palace</h3>
+                    <p>Web moderna con tour virtual integrado que permite explorar las instalaciones del hotel.</p>
+                    <a href="#" class="btn">Ver análisis completo</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="zonas" class="container section">
+            <h2>Zonas Comerciales</h2>
+            <p>Pontevedra cuenta con varias zonas comerciales bien definidas:</p>
+            <div class="map-container">
+                <div id="map">
+                    <!-- Aquí irá el mapa interactivo -->
+                    <img src="images/mapa_placeholder.png" alt="Mapa de zonas comerciales de Pontevedra">
+                </div>
+            </div>
+            <div class="grid-2">
+                <div>
+                    <h3>Principales zonas</h3>
+                    <ol>
+                        <li><strong>Centro Histórico (Zona Monumental)</strong>: Concentra gran parte de los restaurantes tradicionales y cafeterías</li>
+                        <li><strong>Calle Michelena</strong>: Importante arteria comercial</li>
+                        <li><strong>Calle Benito Corbal</strong>: Extensión comercial desde la iglesia de la Peregrina</li>
+                        <li><strong>Zona del Ensanche</strong>: Eje formado por Calle de la Oliva, Plaza de San José y Calle Rosalía de Castro</li>
+                    </ol>
+                </div>
+                <div>
+                    <h3>Características</h3>
+                    <ul>
+                        <li>Zonas peatonales bien definidas</li>
+                        <li>Alta concentración de negocios en el Centro Histórico</li>
+                        <li>Buena conexión entre zonas comerciales</li>
+                        <li>Presencia de negocios tradicionales y modernos</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="nuevas-empresas" class="container section">
+            <h2>Empresas de Nueva Creación en Galicia</h2>
+            <p>Análisis de las últimas empresas constituidas en Galicia durante marzo de 2025:</p>
+            
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">Todas</button>
+                <button class="filter-btn" data-filter="A Coruña">A Coruña</button>
+                <button class="filter-btn" data-filter="Pontevedra">Pontevedra</button>
+                <button class="filter-btn" data-filter="Lugo">Lugo</button>
+                <button class="filter-btn" data-filter="Ourense">Ourense</button>
+            </div>
+            
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nº</th>
+                            <th>Nombre de la empresa</th>
+                            <th>Fecha de constitución</th>
+                            <th>Provincia</th>
+                            <th>Tipo de sociedad</th>
+                            <th>Sector/Actividad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Hermanrose SL</td>
+                            <td>14/03/2025</td>
+                            <td>No especificada</td>
+                            <td>Sociedad Limitada</td>
+                            <td>No especificada</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Mab Economistas SLP</td>
+                            <td>14/03/2025</td>
+                            <td>No especificada</td>
+                            <td>Sociedad Limitada Profesional</td>
+                            <td>Servicios de asesoría económica</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Siasak Global SL</td>
+                            <td>14/03/2025</td>
+                            <td>No especificada</td>
+                            <td>Sociedad Limitada</td>
+                            <td>No especificada</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Fulantica Sociedad Limitada</td>
+                            <td>14/03/2025</td>
+                            <td>No especificada</td>
+                            <td>Sociedad Limitada</td>
+                            <td>No especificada</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="note">
+                <h3>Nota metodológica</h3>
+                <p>Esta información ha sido recopilada a partir de eInforma (datos parciales visibles en resultados de búsqueda). Para un análisis más completo, se recomienda acceder directamente al BORME o utilizar servicios como eInforma, Axesor o Infoempresa con acceso completo.</p>
+            </div>
+            
+            <div class="grid-2">
+                <div>
+                    <a href="nuevas-empresas.html" class="btn">Ver análisis completo de nuevas empresas</a>
+                </div>
+                <div>
+                    <a href="#" class="btn btn-accent">Actualizar datos</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="conclusiones" class="container section">
+            <h2>Conclusiones y Recomendaciones</h2>
+            
+            <div class="grid-3">
+                <div class="card">
+                    <h3>Fortalezas del Mercado Local</h3>
+                    <ul>
+                        <li>Alta calidad gastronómica, especialmente en cafeterías</li>
+                        <li>Buena presencia digital básica (sitios web y Facebook)</li>
+                        <li>Diversidad de oferta hotelera en diferentes categorías de precio</li>
+                        <li>Zonas comerciales bien definidas y peatonales</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h3>Áreas de Mejora</h3>
+                    <ul>
+                        <li>Baja presencia en Twitter/X</li>
+                        <li>Actividad en redes sociales mejorable en muchos establecimientos</li>
+                        <li>Optimización para buscadores en sitios web</li>
+                        <li>Integración de herramientas digitales avanzadas</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h3>Recomendaciones</h3>
+                    <ol>
+                        <li>Mejorar presencia en redes sociales</li>
+                        <li>Optimizar sitios web para SEO</li>
+                        <li>Implementar herramientas digitales</li>
+                        <li>Formación digital para propietarios</li>
+                        <li>Colaboración entre negocios</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Análisis de Mercado Local - Pontevedra</p>
+            <p>Desarrollado por <a href="https://strategoestudio.es/" target="_blank" style="color: white;">Stratego Estudio</a></p>
+            <p>Última actualización: Marzo 2025</p>
+        </div>
+    </footer>
+
+    <script src="js/main-stratego.js"></script>
+</body>
+</html>
